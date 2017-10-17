@@ -8,21 +8,31 @@ De acuerdo a la [definición de Symfony en su propia web](http://symfony.com/wha
 Symfony2 is a reusable set of standalone, decoupled, and cohesive PHP components that solve common web development problems.
 `
 
-... y por otra ...
+... por otra ...
 
 `
 Based on these components, Symfony2 is also a full-stack web framework.
 `
 
-Es decir, hay varias maneras de utilizar Symfony en los proyectos PHP. La más obvia consiste en construir nuestra aplicacion sobre el framework Symfony 2 al completo, pero si lo deseamos también podemos utilizar únicamente algunos de sus componentes.
+... y por otra parte más ...
+
+`
+Symfony2 is an HTTP framework; it is a Request/Response framework.
+`
+
+Esta última definición parece encuadrarse más en el gusto de Fabien. Symfony es en verdad un framework Request/Response (Petición / Respuesta), ni más ni menos.
+
+Es decir, hay varias definiciones y maneras de utilizar Symfony en los proyectos PHP. La más obvia consiste en construir nuestra aplicacion sobre el framework Symfony al completo, pero si lo deseamos también podemos utilizar únicamente algunos de sus componentes.
 
 
-## HTTP Framework
-A menudo, Symfony 2 es definido como un **framework MVC**. El [patrón MVC](es.wikipedia.org/wiki/Modelo_Vista_Controlador) consiste en separar en capas distintas los componentes encargados de manejar la vista, el modelo y el controlador.
+## MVC Framework
+Si bien a Fabien no le gusta demasiado definir a Symfony como un framework MVC lo cierto es que la gran mayoría de los proyectos hacen uso de este patrón para separar las capas del negocio, de la vista y de los controladores.
+
+Por lo tanto Symfony se define muy amenudo como un **framework MVC**. El [patrón MVC](es.wikipedia.org/wiki/Modelo_Vista_Controlador) consiste en separar en capas distintas los componentes encargados de manejar la vista, el modelo y el controlador.
 
 ![Arquitectura MVC](mvc.png "Arquitectura MVC")
 
-Aunque Symfony 2 comparte algunos de los conceptos del patrón MVC (separación por capas), su objetivo es otro; atender peticiones HTTP de una manera organizada y eficaz. Por ello, Symfony 2 se define como un **framework HTTP**.
+Aunque Symfony comparte algunos de los conceptos del patrón MVC (separación por capas), su objetivo es otro; atender peticiones HTTP de una manera organizada y eficaz. Por ello, Symfony se define tambíen como un **framework HTTP**.
 
 Symfony abstrae la petición HTTP en un objeto Request que es procesado por el framework. Para ello intervienen varios componentes; el enrutado, el controlador responsable de dicha petición y el Event Dispatcher. La forma en que esté organizado el modelo depende completamente de nosotros. Podemos devolver contenido HTML o respuestas en JSON, XML, o cualquier otro formato. Por lo tanto, ni el modelo ni la vista dependen en absoluto del framework.
 
